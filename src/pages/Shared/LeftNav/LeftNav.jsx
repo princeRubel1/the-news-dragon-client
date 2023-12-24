@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import LeftNews from '../LeftNews/LeftNews';
 
 const LeftNav = () => {
     const [categories, setCategories] = useState([]); 
@@ -13,7 +14,7 @@ const LeftNav = () => {
 
     return (
         <div className='mt-4'>
-           <h4 className=' mb-3'>All Category</h4>
+           <h4 className=' mb-3 ps-4'>All Category</h4>
            <h3 className='shadow-sm bg-light p-3 text-center'>National News</h3>
            <div className='ps-5 py-3 shadow-sm p-3 mb-5 bg-white rounded mt-4'>
            {
@@ -22,6 +23,7 @@ const LeftNav = () => {
             </p>)
            }
            </div>
+           <LeftNews></LeftNews>
         </div>
     );
 };
